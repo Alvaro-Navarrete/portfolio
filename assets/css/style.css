@@ -19,6 +19,7 @@ body{
 
 h2{
     color: aqua;
+    margin-bottom: 20px;
 }
 
 .avatar{
@@ -82,3 +83,31 @@ h2{
     color: aqua;
     fill: aqua;
 }
+
+
+.form-control::placeholder {
+    color: rgb(75, 75, 75); 
+    opacity: 1; /* Para que el color sea visible */
+  }
+
+  /* Para navegadores WebKit (Chrome, Safari, Opera) */
+  .form-control::-webkit-input-placeholder {
+    color: rgb(75, 75, 75);
+  }
+
+  /* Para Mozilla Firefox 19+ */
+  .form-control::-moz-placeholder {
+    color: rgb(75, 75, 75);
+    opacity: 1;
+  }
+
+  /* Para Mozilla Firefox 4 a 18 */
+  .form-control:-moz-placeholder {
+    color: rgb(75, 75, 75);
+    opacity: 1;
+  }
+
+  /* Para Internet Explorer 10+ */
+  .form-control:-ms-input-placeholder {
+    color: rgb(75, 75, 75);
+  }

@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 100);
         });
         $(habilidad).on("click", function(event){
-            var posicion = $("#skills").offset().top
+            var posicion = $("#skills").offset().top / 1.2
 
             $('html, body').animate({
                 scrollTop: posicion

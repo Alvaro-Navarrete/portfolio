@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         $(proyecto).on("click", function(event){
-            var posicion = $("#project-container").offset().top
+            var posicion = $("#project-container").offset().top - 70
 
             $('html, body').animate({
                 scrollTop: posicion
@@ -63,14 +63,14 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 100);
         });
         $(sobreMi).on("click", function(event){
-            var posicion = $("#about-me").offset().top
+            var posicion = $("#about-me").offset().top - 70
 
             $('html, body').animate({
                 scrollTop: posicion
             }, 100);
         });
         $(contacto).on("click", function(event){
-            var posicion = $("#contact").offset().top
+            var posicion = $("#contact").offset().top - 70
 
             $('html, body').animate({
                 scrollTop: posicion

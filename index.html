@@ -70,7 +70,7 @@
                         <h1>Alvaro Navarrete</h1>
                         <h2>FullStack Developer</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit eius delectus numquam adipisci repellendus ipsa enim rem molestiae ea expedita, ullam natus, rerum aut dolores esse saepe impedit. Consequatur, esse?</p>
-                        <a class="btn btn-outline-secondary" href="../assets/Cv_Alvaro_Navarrete.pdf">Descargar cv</a>
+                        <button id="cv" class="btn btn-outline-secondary">Descargar cv</button>
                     </div>
                 </div>
             </div>
@@ -152,25 +152,33 @@
             </div>
 
             <!-- sobre mi -->
-            <div id="about-me" class="row mt-4">
-                <div class="p-5">
-                    <div class="info-izquierda border border-info rounded-3 m-3 p-3">
-                        <h2>Sobre mi</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, accusamus unde fugit veniam soluta, ipsam nemo facilis mollitia maxime quasi fugiat a, fuga error omnis sed sequi facere praesentium expedita!</p>
+            <div id="about-me" class="mt-4">
+                <div class="row">
+                    <div class="d-flex justify-content-start">
+                        <div class="info-izquierda col-md-6 border border-info rounded-3 m-3 p-3">
+                            <h2>Sobre mi</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, accusamus unde fugit veniam soluta, ipsam nemo facilis mollitia maxime quasi fugiat a, fuga error omnis sed sequi facere praesentium expedita!</p>
+                        </div>
                     </div>
-                    <div class="info-derecha border border-info rounded-3 m-3 p-3">
-                        <h2>Sobre mi</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, accusamus unde fugit veniam soluta, ipsam nemo facilis mollitia maxime quasi fugiat a, fuga error omnis sed sequi facere praesentium expedita!</p>
+                    <div class="d-flex justify-content-end">
+                        <div class="info-derecha col-md-6 border border-info rounded-3 m-3 p-3">
+                            <h2>Sobre mi</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, accusamus unde fugit veniam soluta, ipsam nemo facilis mollitia maxime quasi fugiat a, fuga error omnis sed sequi facere praesentium expedita!</p>
+                        </div>
                     </div>
-                    <div class="info-izquierda border border-info rounded-3 m-3 p-3">
-                        <h2>Sobre mi</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, accusamus unde fugit veniam soluta, ipsam nemo facilis mollitia maxime quasi fugiat a, fuga error omnis sed sequi facere praesentium expedita!</p>
+                    <div class="d-flex justify-content-start">
+                        <div class="info-izquierda col-md-6 border border-info rounded-3 m-3 p-3">
+                            <h2>Sobre mi</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, accusamus unde fugit veniam soluta, ipsam nemo facilis mollitia maxime quasi fugiat a, fuga error omnis sed sequi facere praesentium expedita!</p>
+                        </div>
                     </div>
-
-                    <div class="info-derecha border border-info rounded-3 m-3 p-3">
-                        <h2>Sobre mi</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, accusamus unde fugit veniam soluta, ipsam nemo facilis mollitia maxime quasi fugiat a, fuga error omnis sed sequi facere praesentium expedita!</p>
+                    <div class="d-flex justify-content-end">
+                        <div class="info-derecha col-md-6 border border-info rounded-3 m-3 p-3">
+                            <h2>Sobre mi</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, accusamus unde fugit veniam soluta, ipsam nemo facilis mollitia maxime quasi fugiat a, fuga error omnis sed sequi facere praesentium expedita!</p>
+                        </div>
                     </div>
+                    
                     
                 </div>
             </div>
@@ -181,15 +189,15 @@
                 <form class="form row" action="https://formsubmit.co/facba422aefa73ec5f279cffb8dce1b2" method="post">
                     <div class="mb-3 col-md-6">
                         <label class="form-label" for="nombre">Nombre</label>
-                        <input class="form-control bg-transparent" type="nombre" id="nombre" name="nombre" placeholder="Jane Doe" required>
+                        <input class="form-control bg-dark" type="nombre" id="nombre" name="nombre" placeholder="Jane Doe" required>
                     </div>
                     <div class="mb-3 col-md-6">
                         <label class="form-label" for="email">Email</label>
-                        <input class="form-control bg-transparent" type="email" id="email" name="email" placeholder="tuemail@email.com" required>
+                        <input class="form-control bg-dark" type="email" id="email" name="email" placeholder="tuemail@email.com" required>
                     </div>
                     <div class="mb-3 col-12">
                         <label class="form-label" for="mensaje">Mensaje</label>
-                        <textarea class="form-control bg-transparent" name="mensaje" id="mensaje" cols="35" rows="5" placeholder="Me gustaria contactar contigo..." required></textarea>
+                        <textarea class="form-control bg-dark" name="mensaje" id="mensaje" cols="35" rows="5" placeholder="Me gustaria contactar contigo..." required></textarea>
                     </div>
                     <input class="btn btn-outline-success col-auto" type="submit" value="Enviar">
 

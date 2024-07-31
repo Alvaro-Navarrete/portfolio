@@ -74,6 +74,10 @@ h2{
     transition: all .8s;
 }
 
+.offset-box {
+    margin-top: 25%; /* Ajusta este valor para desplazar verticalmente los divs de la derecha */
+}
+
 .footer-link{
     color: #fff;
     fill: #fff;

@@ -4,10 +4,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const habilidad = document.getElementById('habilidad');
     const sobreMi = document.getElementById('sobre-mi');
     const contacto = document.getElementById('contacto');
-
+    const btnCv = document.getElementById('cv');
 
 
     $(function () {
+
 
         $(window).on("scroll", function () {
 
@@ -39,8 +40,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         })
 
-       
-        $(inicio).on("click", function(event){
+        $(btnCv).on('click', function (event) {
+            window.open("../assets/Cv_Alvaro_Navarrete.pdf")
+        })
+
+
+
+        $(inicio).on("click", function (event) {
             var posicion = $("body").offset().top
 
             $('html, body').animate({
@@ -48,28 +54,28 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 100);
         });
 
-        $(proyecto).on("click", function(event){
+        $(proyecto).on("click", function (event) {
             var posicion = $("#project-container").offset().top - 70
 
             $('html, body').animate({
                 scrollTop: posicion
             }, 100);
         });
-        $(habilidad).on("click", function(event){
+        $(habilidad).on("click", function (event) {
             var posicion = $("#skills").offset().top - 150
 
             $('html, body').animate({
                 scrollTop: posicion
             }, 100);
         });
-        $(sobreMi).on("click", function(event){
+        $(sobreMi).on("click", function (event) {
             var posicion = $("#about-me").offset().top - 70
 
             $('html, body').animate({
                 scrollTop: posicion
             }, 100);
         });
-        $(contacto).on("click", function(event){
+        $(contacto).on("click", function (event) {
             var posicion = $("#contact").offset().top - 70
 
             $('html, body').animate({

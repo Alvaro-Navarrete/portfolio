@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     $(function () {
 
-
+        // desliza los elementos al ir bajando la pantalla
         $(window).on("scroll", function () {
 
             const elementLeft = document.querySelectorAll('.info-izquierda');
@@ -83,6 +83,30 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 100);
         });
 
+
+        //modal
+        // const modal = document.getElementById('modal')
+        
+
+        $(".btn-modal").on('click', function (event) {
+            if ($('#modal').css('display') === "none" || $('#modal').css('display') === "") {
+                $('#modal').css('display', 'flex')
+                $('#modal-background').css('display', 'flex')
+            } else {
+                $('#modal').css('display', 'none')
+                $('#modal-background').css('display', 'none')
+            }
+        })
+
+        $('#modal-background').on('click', function (event) {
+            $('#modal').css('display', 'none')
+            $('#modal-background').css('display', 'none')
+        })
+       
+    
+        // $('#modal').on('click', function (event) {
+        //     event.stopPropagation();
+        // })
 
 
     })

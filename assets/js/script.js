@@ -46,6 +46,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+        // desplazamiento de pantalla hacia la seccion
+
         $(inicio).on("click", function (event) {
             var posicion = $("body").offset().top
 
@@ -85,31 +87,39 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
         //modal
-        // const modal = document.getElementById('modal')
-        
 
-        $(".btn-modal").on('click', function (event) {
+
+        $(".box-project").on('click', function (event) {
             if ($('#modal').css('display') === "none" || $('#modal').css('display') === "") {
                 $('#modal').css('display', 'flex')
                 $('#modal-background').css('display', 'flex')
-            } else {
-                $('#modal').css('display', 'none')
-                $('#modal-background').css('display', 'none')
             }
+            // else {
+            //     $('#modal').css('display', 'none')
+            //     $('#modal-background').css('display', 'none')
+            // }
         })
 
         $('#modal-background').on('click', function (event) {
             $('#modal').css('display', 'none')
             $('#modal-background').css('display', 'none')
         })
-       
-    
+
+
         // $('#modal').on('click', function (event) {
         //     event.stopPropagation();
         // })
 
 
+
+
+
     })
+
+    // tooltip bootstrap
+
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
 
 })

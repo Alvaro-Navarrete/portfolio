@@ -5,11 +5,11 @@
     color: #fff;
 }
 
-body{
+body {
     background-color: rgb(18, 17, 19);
 }
 
-.wrapper{
+.wrapper {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -17,16 +17,14 @@ body{
     overflow-x: hidden;
 }
 
-h2{
+h2 {
     color: aqua;
     margin-bottom: 20px;
 }
 
-.avatar{
-    mask-image: linear-gradient(
-        black 80%,
-        transparent
-    );
+.avatar {
+    mask-image: linear-gradient(black 80%,
+            transparent);
 }
 
 .navbar {
@@ -40,24 +38,32 @@ h2{
     width: 100%;
 }
 
-#top-container{
+#top-container {
     margin: 85px 0;
 }
 
-.box-project{
-    /* background-color: ; */
+/* project */
+
+.box-project {
     width: 200px;
     height: 200px;
-    border-radius: 10px;
     margin: 10px;
+    transition: all .3s;
 }
 
-.project-modal{
+.box-project:hover {
+    transform: scale(1.1);
+    transition: all .3s;
+}
+
+.project-modal {
     position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
+    width: 66%;
+    height: 66%;
     display: none;
 }
 
@@ -71,72 +77,86 @@ h2{
     display: none;
 }
 
-.modal-container{
-    width: 200px;
-    height: 200px;
-    background-color: aqua;
+/* .modal-container{ */
+/* width: 200px; */
+/* height: 200px; */
+/* background-color: aqua; */
+/* } */
+
+
+/* skills */
+
+.custom-tooltip {
+    --bs-tooltip-bg: rgb(24, 104, 158);
+    --bs-tooltip-color: #fff;
 }
 
-.max-container{
+.max-container {
     max-width: 70%;
 }
 
-.info-izquierda{
+/* information */
+
+.info-izquierda {
     opacity: 0;
     transform: translateX(-100%);
     transition: all .8s;
 }
 
-.info-derecha{
+.info-derecha {
     opacity: 0;
     transform: translateX(100%);
     transition: all .8s;
 }
 
-.visible{
+.visible {
     opacity: 1;
     transform: none;
     transition: all .8s;
 }
 
 .offset-box {
-    margin-top: 25%; /* Ajusta este valor para desplazar verticalmente los divs de la derecha */
+    margin-top: 25%;
+    /* Ajusta este valor para desplazar verticalmente los divs de la derecha */
 }
 
-.footer-link{
+/* footer */
+
+.footer-link {
     color: #fff;
     fill: #fff;
 }
 
-.footer-link:hover{
+.footer-link:hover {
     color: aqua;
     fill: aqua;
 }
 
 
 .form-control::placeholder {
-    color: rgb(75, 75, 75); 
-    opacity: 1; /* Para que el color sea visible */
-  }
-
-  /* Para navegadores WebKit (Chrome, Safari, Opera) */
-  .form-control::-webkit-input-placeholder {
-    color: rgb(75, 75, 75);
-  }
-
-  /* Para Mozilla Firefox 19+ */
-  .form-control::-moz-placeholder {
     color: rgb(75, 75, 75);
     opacity: 1;
-  }
+    /* Para que el color sea visible */
+}
 
-  /* Para Mozilla Firefox 4 a 18 */
-  .form-control:-moz-placeholder {
+/* Para navegadores WebKit (Chrome, Safari, Opera) */
+.form-control::-webkit-input-placeholder {
+    color: rgb(75, 75, 75);
+}
+
+/* Para Mozilla Firefox 19+ */
+.form-control::-moz-placeholder {
     color: rgb(75, 75, 75);
     opacity: 1;
-  }
+}
 
-  /* Para Internet Explorer 10+ */
-  .form-control:-ms-input-placeholder {
+/* Para Mozilla Firefox 4 a 18 */
+.form-control:-moz-placeholder {
     color: rgb(75, 75, 75);
-  }
+    opacity: 1;
+}
+
+/* Para Internet Explorer 10+ */
+.form-control:-ms-input-placeholder {
+    color: rgb(75, 75, 75);
+}

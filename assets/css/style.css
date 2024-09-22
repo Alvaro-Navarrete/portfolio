@@ -60,6 +60,10 @@ h2 {
 
 /* project */
 
+body.open_modal{
+    overflow: hidden;
+}
+
 .box-project {
     width: 200px;
     height: 200px;

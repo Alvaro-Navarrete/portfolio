@@ -93,22 +93,24 @@ document.addEventListener('DOMContentLoaded', () => {
             if ($('#modal').css('display') === "none" || $('#modal').css('display') === "") {
                 $('#modal').css('display', 'flex')
                 $('#modal-background').css('display', 'flex')
+
+                // deshabilita el scroll de la pagina    
+                $('body').addClass('open_modal');
             }
-            // else {
-            //     $('#modal').css('display', 'none')
-            //     $('#modal-background').css('display', 'none')
-            // }
         })
 
         $('#modal-background').on('click', function (event) {
             $('#modal').css('display', 'none')
             $('#modal-background').css('display', 'none')
+
+            // remueve la clase para desplazar la pagina
+            $('body').removeClass('open_modal');
         })
 
 
-        // $('#modal').on('click', function (event) {
-        //     event.stopPropagation();
-        // })
+        $('#modal').on('click', function (event) {
+            event.stopPropagation();
+        })
 
 
 

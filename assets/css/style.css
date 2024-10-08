@@ -39,8 +39,7 @@ h2 {
 }
 
 .avatar {
-    mask-image: linear-gradient(black 80%,
-            transparent);
+    mask-image: linear-gradient(black 80%, transparent);
 }
 
 .navbar {
@@ -176,4 +175,24 @@ body.open_modal{
 /* Para Internet Explorer 10+ */
 .form-control:-ms-input-placeholder {
     color: rgb(75, 75, 75);
+}
+
+.letra{
+    height: 180px;
+    z-index: -9999;
+    font-size: 20px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-align: center;
+    color: #797979;
+    mask-image: linear-gradient(black 10%, transparent);
+    
+}
+
+.contacts{
+    color: aqua;
+    text-shadow: 1px 1px 0 #000,
+                -1px 1px 0 #000,
+                1px -1px 0 #000,
+                -1px -1px 0 #000;
 }

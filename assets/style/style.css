@@ -113,6 +113,10 @@ body.open_modal{
 
 /* information */
 
+/* .img-aboutme{
+    max-height: 250px;
+} */
+
 .info-izquierda {
     opacity: 0;
     transform: translateX(-100%);

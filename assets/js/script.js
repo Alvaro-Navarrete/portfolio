@@ -39,9 +39,10 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
         })
+        
 
         $(btnCv).on('click', function (event) {
-            window.open("../assets/Cv_Alvaro_Navarrete.pdf")
+            window.open("assets/Cv_Alvaro_Navarrete.pdf")
         })
 
 
